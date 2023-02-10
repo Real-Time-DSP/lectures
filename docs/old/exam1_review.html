@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Exam 1 review &#8212; Dan Jacobellis | University of Texas at Austin</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/theme.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section class="tex2jax_ignore mathjax_ignore" id="exam-1-review">
+<h1>Exam 1 review<a class="headerlink" href="#exam-1-review" title="Permalink to this headline">¶</a></h1>
+<section id="homework-0-1">
+<h2>Homework 0.1<a class="headerlink" href="#homework-0-1" title="Permalink to this headline">¶</a></h2>
+<p><img alt="" src="old/img/hw0_1.svg" /></p>
+<ul class="simple">
+<li><p>Bandwidth is extent in positive frequency</p>
+<ul>
+<li><p>Can be determined by eyeballing</p></li>
+</ul>
+</li>
+<li><p>Convolution property</p>
+<ul>
+<li><p>Multiplication in time domain is convolution in frequency domain</p></li>
+<li><p>Finite observation time <span class="math notranslate nohighlight">\(\leftrightarrow\)</span> spreading in frequency</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="homework-0-2-homework-1-3">
+<h2>Homework 0.2 / Homework 1.3<a class="headerlink" href="#homework-0-2-homework-1-3" title="Permalink to this headline">¶</a></h2>
+<p><img alt="" src="old/img/hw0_2.svg" /></p>
+<ul class="simple">
+<li><p>Modulation property
+$<span class="math notranslate nohighlight">\(x(t) \cos{(2\pi f_0 t)} \leftrightarrow \frac 1 2 X(f-f_0) + \frac 1 2  X(f+f_0)\)</span>$</p></li>
+<li><p>Squaring can replace multiplication by cosine in the demodulator.</p></li>
+</ul>
+</section>
+<section id="homework-0-3">
+<h2>Homework 0.3<a class="headerlink" href="#homework-0-3" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Sampling can be modeled by multiplication with impulse train</p></li>
+<li><p>Fourier transform of impulse train is another impulse train</p></li>
+<li><p>Sampling in time domain <span class="math notranslate nohighlight">\(\leftrightarrow\)</span> replicas in frequency domain</p></li>
+</ul>
+<p><img alt="" src="old/img/pulse_train.svg" /></p>
+</section>
+<section id="homework-0-4-lab-2">
+<h2>Homework 0.4 / Lab 2<a class="headerlink" href="#homework-0-4-lab-2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Multiple methods to generate sinusoid</p>
+<ul>
+<li><p>Function call</p></li>
+<li><p>Lookup table</p></li>
+<li><p>Difference equation</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="homework-1-1-homework-2-1">
+<h2>Homework 1.1 / Homework 2.1<a class="headerlink" href="#homework-1-1-homework-2-1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Moving average</p></li>
+<li><p>First order difference</p></li>
+<li><p>Discrete-time integrator</p></li>
+<li><p>Second order (biquad) bandpass filter</p></li>
+</ul>
+<p><a class="reference external" href="https://realtimedsp.net/handouts/LTI_systems_filters.html">Handout on LTI systems and filters</a></p>
+<section id="homework-1-2-2-2">
+<h3>Homework 1.2 /2.2<a class="headerlink" href="#homework-1-2-2-2" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Chirp signals</p></li>
+<li><p>Spectrogram</p></li>
+<li><p>Upsampling</p></li>
+<li><p>Downsampling</p></li>
+</ul>
+<p><img alt="" src="old/img/upsample_downsample.svg" /></p>
+</section>
+<section id="homework-3-2">
+<h3>Homework 3.2<a class="headerlink" href="#homework-3-2" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Quadrature amplitude modulation</p></li>
+<li><p>Effect of frequency and phase error</p></li>
+</ul>
+<p><img alt="" src="old/img/hw3_2.svg" /></p>
+</section>
+</section>
+<section id="homework-2-3-3-3-lab-3">
+<h2>Homework 2.3 / 3.3 / Lab 3<a class="headerlink" href="#homework-2-3-3-3-lab-3" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="http://users.ece.utexas.edu/~bevans/courses/realtime/lectures/06_IIR_Filters/announcements.html">Design and implementation of filters</a></p></li>
+</ul>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">Lectures</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../IIR.html">Infinite impulse response filters</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.5.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/old/exam1_review.ipynb.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
